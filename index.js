@@ -5,7 +5,7 @@ var numberOfButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfButtons; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 
     var buttonInnerHTML = this.innerHTML;
     audioPlay(buttonInnerHTML);
@@ -16,7 +16,7 @@ for (var i = 0; i < numberOfButtons; i++) {
 
 // Keyboard Key Pressing
 
-var keyCheck = document.addEventListener("keydown", function(event) {
+var keyCheck = document.addEventListener("keydown", function (event) {
   audioPlay(event.key);
   buttonAnimation(event.key);
 });
@@ -68,7 +68,7 @@ function audioPlay(key) {
 function buttonAnimation(currentKey) {
   var clickedbutton = document.querySelector("." + currentKey);
   clickedbutton.classList.add("pressed");
-  setTimeout(function(){
+  setTimeout(function () {
     clickedbutton.classList.remove("pressed");
   }, 100)
 }
