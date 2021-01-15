@@ -4,5 +4,4 @@
 
 - To reproduce a sound, you can either left click with your mouse on the drum kit buttons or you can press the respective keyboard letter of the sound that you want to reproduce. 
 
-<br>
 Live page --> https://kyoukanpt.github.io/drumkit/
